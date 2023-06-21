@@ -1,2 +1,2 @@
-# algo-simple-bubble-sort
+# Bubble sort
 Simple bubble sort implementation in C
