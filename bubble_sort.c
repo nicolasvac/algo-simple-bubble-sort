@@ -9,11 +9,12 @@ void sort(int *vec, int vec_size) {
         return;
     }
 
-    int vec_max_size = vec_size;
+    // Minus 1 because we already do +1 while checking the bubble
+    int vec_max_size = vec_size -1;
 
     while (vec_max_size != 0) {
-        // Minus 1 because we already do +1 while checking the bubble
-        for (int i = 0; i < vec_max_size - 1; ++i) {
+        for (int i = 0; i < vec_max_size; ++i) {
+            printf("%d %d\n", i, vec_max_size);
             if (vec[i] > vec[i + 1]) {
                 // swap
                 int temp = vec[i + 1];
